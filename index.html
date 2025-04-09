@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SEM - Sophie Entretien &amp; Mémoire</title>
+      <style>
+        /* Palette de couleurs */
+        :root {
+          --bleu-fonce: #1f2b3d;
+          --beige-doux: #f5f0eb;
+          --gris-clair: #d4d4d4;
+          --accent: #708d81; /* ou #7e4b52 */
+          --shadow: rgba(0, 0, 0, 0.1);
+          --background-light: #f9f6f2; /* Beige très clair */
+        }
+
+        /* Typographie */
+        body {
+          font-family: 'Inter', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: var(--beige-doux);
+          color: var(--bleu-fonce);
+          line-height: 1.6;
+          transition: background-color 0.3s ease;
+        }
+
+        /* Conteneur principal */
+        .container {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 30px;
+          background-color: var(--background-light); /* Utilisation de la couleur beige clair */
+          box-shadow: 0 5px 20px var(--shadow);
+          border-radius: 12px;
+          transition: box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+          box-shadow: 0 8px 25px var(--shadow);
+        }
+
+        /* Header */
+        header {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        /* Logo */
+        .logo {
+          max-width: 180px;
+          height: auto;
+          margin: 0 auto 25px;
+          display: block;
+          transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+          transform: scale(1.05);
+        }
+
+        /* Accroche principale */
+        h1 {
+          color: var(--bleu-fonce);
+          font-size: 2.2em;
+          margin-bottom: 15px;
+          transition: color 0.3s ease;
+        }
+
+        h1:hover {
+          color: var(--accent);
+        }
+
+        /* Description */
+        p {
+          color: var(--bleu-fonce);
+          margin-bottom: 30px;
+          font-size: 1.1em;
+        }
+
+        /* Services */
+        .services {
+          margin-bottom: 30px;
+        }
+
+        .services h2 {
+          color: var(--bleu-fonce);
+          font-size: 1.7em;
+          margin-bottom: 15px;
+          border-bottom: 2px solid var(--gris-clair);
+          padding-bottom: 8px;
+        }
+
+        .services ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .services li {
+          margin-bottom: 10px;
+          padding: 12px;
+          border-radius: 6px;
+          background-color: var(--beige-doux);
+          box-shadow: 0 2px 5px var(--shadow);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .services li:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 4px 8px var(--shadow);
+        }
+
+        /* Contact */
+        .contact {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        .contact a {
+          display: inline-block;
+          margin: 0 15px;
+          padding: 12px 25px;
+          background-color: var(--accent);
+          color: white;
+          text-decoration: none;
+          border-radius: 8px;
+          font-size: 1.1em;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+          box-shadow: 0 3px 7px var(--shadow);
+        }
+
+        .contact a:hover {
+          background-color: #5a7369;
+          transform: scale(1.05);
+          box-shadow: 0 5px 10px var(--shadow);
+        }
+
+        /* Facebook */
+        .facebook {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        .facebook a {
+          color: var(--bleu-fonce);
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          transition: color 0.3s ease;
+        }
+
+        .facebook a:hover {
+          color: #3b5998; /* Couleur Facebook */
+        }
+
+        .facebook img {
+          width: 35px;
+          height: auto;
+          margin-right: 8px;
+          transition: transform 0.3s ease;
+        }
+
+        .facebook img:hover {
+          transform: rotate(360deg);
+        }
+
+        /* Footer */
+        footer {
+          text-align: center;
+          padding: 15px;
+          background-color: var(--gris-clair);
+          color: var(--bleu-fonce);
+          font-size: 0.9em;
+          border-radius: 8px;
+          box-shadow: 0 -2px 5px var(--shadow);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+          .container {
+            padding: 20px;
+            margin: 10px auto;
+          }
+
+          h1 {
+            font-size: 1.8em;
+          }
+
+          p {
+            font-size: 1em;
+          }
+
+          .contact a {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 0 10px;
+          }
+
+          .facebook img {
+            width: 30px;
+          }
+        }
+      </style>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container">
+        <header>
+          <!-- Logo -->
+          <img src="URL_DE_VOTRE_LOGO" alt="Logo SEM" class="logo">
+          <h1>Notre site est en construction… mais notre service est déjà là pour vous.</h1>
+          <p>Entretien de sépultures ponctuel ou par abonnement. Interventions respectueuses et soignées dans les cimetières de la région.</p>
+          <p>Nous intervenons dans la zone de la CAB (Communauté d'agglomération de Boulogne) et plus encore.</p>
+          <p>Contactez-nous pour plus d'informations et obtenir un devis gratuit et rapide.</p>
+        </header>
+
+        <section class="services">
+          <h2>Nos Services</h2>
+          <ul>
+            <li>Nettoyage de sépultures</li>
+            <li>Fleurissement</li>
+            <li>Surveillance de fin de concession</li>
+            <li>Offres ponctuelles ou par abonnement mensuel à partir de 20€ / mois</li>
+            <li>Devis gratuit</li>
+          </ul>
+        </section>
+
+        <section class="contact">
+          <h2>Contactez-nous</h2>
+          <a href="tel:0605166311">Téléphone</a>
+          <a href="mailto:contact@SEM-entretien.fr">Email</a>
+        </section>
+
+        <section class="facebook">
+          <a href="https://www.facebook.com/profile.php?id=61575114570352&amp;locale=fr_FR">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook">
+            Suivez-nous sur Facebook
+          </a>
+        </section>
+
+        <footer>
+          <p>N° SIREN : 942 129 685 | Micro-entrepreneur</p>
+        </footer>
+      </div>
+    </body>
+    </html>
